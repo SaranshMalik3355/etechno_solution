@@ -86,67 +86,96 @@ let mixerproducts = mixitup(".products_wrap-container", {
 
 // //counter
 
-// (function ($) {
-//   "use strict";
-//   function count($this) {
-//     var current = parseInt($this.html(), 10);
-//     current = current + 1; /* Where 50 is increment */
-//     $this.html(++current);
-//     if (current > $this.data("count")) {
-//       $this.html($this.data("count"));
-//     } else {
-//       setTimeout(function () {
-//         count($this);
-//       }, 50);
-//     }
-//   }
-//   $(".stat-count").each(function () {
-//     $(this).data("count", parseInt($(this).html(), 10));
-//     $(this).html("0");
-//     count($(this));
-//   });
-// })(jQuery);
+(function ($) {
+  "use strict";
+  function count($this) {
+    var current = parseInt($this.html(), 10);
+    current = current + 1; /* Where 50 is increment */
+    $this.html(++current);
+    if (current > $this.data("count")) {
+      $this.html($this.data("count"));
+    } else {
+      setTimeout(function () {
+        count($this);
+      }, 50);
+    }
+  }
+  $(".stat-count").each(function () {
+    $(this).data("count", parseInt($(this).html(), 10));
+    $(this).html("0");
+    count($(this));
+  });
+})(jQuery);
 
 // //progress bar js
 
-// $(document).ready(function ($) {
-//   function animateElements() {
-//     $(".progressbar").each(function () {
-//       var elementPos = $(this).offset().top;
-//       var topOfWindow = $(window).scrollTop();
-//       var percent = $(this).find(".circle").attr("data-percent");
-//       var animate = $(this).data("animate");
-//       if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-//         $(this).data("animate", true);
-//         $(this)
-//           .find(".circle")
-//           .circleProgress({
-//             // startAngle: -Math.PI / 2,
-//             value: percent / 100,
-//             size: 400,
-//             thickness: 15,
-//             fill: {
-//               color: "#f47a14",
-//             },
-//           })
-//           .on(
-//             "circle-animation-progress",
-//             function (event, progress, stepValue) {
-//               $(this)
-//                 .find("strong")
-//                 .text((stepValue * 100).toFixed(0) + "%");
-//             }
-//           )
-//           .stop();
-//       }
-//     });
-//   }
+$(document).ready(function ($) {
+  function animateElements() {
+    $(".progressbar").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var percent = $(this).find(".circle").attr("data-percent");
+      var animate = $(this).data("animate");
+      if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+        $(this).data("animate", true);
+        $(this)
+          .find(".circle")
+          .circleProgress({
+            // startAngle: -Math.PI / 2,
+            value: percent / 100,
+            size: 400,
+            thickness: 15,
+            fill: {
+              color: "#f47a14",
+            },
+          })
+          .on(
+            "circle-animation-progress",
+            function (event, progress, stepValue) {
+              $(this)
+                .find("strong")
+                .text((stepValue * 100).toFixed(0) + "%");
+            }
+          )
+          .stop();
+      }
+    });
+  }
 
-//   animateElements();
-//   $(window).scroll(animateElements);
-// });
+  animateElements();
+  $(window).scroll(animateElements);
+});
 
 // //accordion
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+accordionHeaders.forEach((header) => {
+  header.addEventListener("click", function () {
+    const content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
+
+// swiper
+var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 // $("#faq-accordion").accordion({
 //   collapsible: true,

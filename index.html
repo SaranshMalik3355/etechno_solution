@@ -17,10 +17,17 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         `crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <!-- google fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Prompt:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!--jquery ui files-->
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -48,19 +55,19 @@
             </div>
     </header>
 
-
-
     <section class="header-bg-parent">
         <div class="header-col1">
-            <h2 class="main-heading">Etechno Offers</h2>
-            <h2 class="typewrite" data-period="1000"
-                data-type='["Development", "Solution", "IT-Support And Construction"]'></h2>
-            <p>We Provide Placement , Training, Development.</p>
-            <div class="main-buttons">
-                <!-- Need to change buttons to anchor -->
-                <a class="common-btn btn">Get Started</a>
-                <a class="common-btn btn"> <ion-icon name="videocam-sharp"></ion-icon></i> Watch
-                    video</a>
+            <div class="main_group">
+                <h2 class="main-heading">Etechno Offers</h2>
+                <h2 class="typewrite" data-period="1000"
+                    data-type='["Development", "Solution", "IT-Support And Construction"]'></h2>
+                <p>We Provide Placement , Training, Development.</p>
+                <div class="main-buttons">
+                    <!-- Need to change buttons to anchor -->
+                    <a class="common-btn btn">Get Started</a>
+                    <a class="common-btn btn"> <ion-icon name="videocam-sharp"></ion-icon></i> Watch
+                        video</a>
+                </div>
             </div>
         </div> <!--header-col1-->
         <div class="header-col2">
@@ -68,23 +75,173 @@
         </div> <!--header-col2-->
     </section> <!--header-bg-parent-->
 
-    <!-- About us  -->
-    <!-- 
-    <section id="about">
-        <h2 class="main-heading">ABOUT US</h2>
-    </section> -->
+    <!-- ============= About us =============  -->
+
+    <section class="about" id="about">
+
+        <h2 class="section_title">ABOUT US</h2>
+        <div class="section_about container">
+            <div class="why-choose-col">
+                <h5 class="common-h5">Why Choose Us</h5>
+                <p> Etechno Solution Pvt Ltd Provide all services to help over community and provide training to batter
+                    future, mostly we work to all plateform to use in real life.</p>
+                <div>
+                    <ul class="about_lists">
+                        <li><ion-icon name="checkmark-done-outline"></ion-icon>Etechno Development Solution.</li>
+                        <li><ion-icon name="checkmark-done-outline"></ion-icon>Etechno Training Solution.</li>
+                        <li><ion-icon name="checkmark-done-outline"></ion-icon>Etechno Placement Support.</li>
+                        <li><ion-icon name="checkmark-done-outline"></ion-icon>Etechno Solution Support.</li>
+                        <li><ion-icon name="checkmark-done-outline"></ion-icon>Etechno Construction Solution.</li>
+                    </ul>
+                </div>
+                <div class="about_btn">
+                    <a class=" btn">Learn more</a>
+                </div>
+            </div>
+
+            <div class="counter-col">
+                <div class="stat">
+                    <div class="count-sub-col">
+                        <div class="milestone-counter">
+                            <span class="stat-count highlight">250</span>
+                            <div class="milestone_details">Years In Industry</div>
+                        </div>
+                    </div>
+                    <div class="count-sub-col">
+                        <div class="milestone-counter">
+                            <span class="stat-count highlight">250</span>
+                            <div class="milestone_details">Years In Industry</div>
+                        </div>
+                    </div>
+                    <div class="count-sub-col">
+                        <div class="milestone-counter">
+                            <span class="stat-count highlight">250</span>
+                            <div class="milestone_details">Years In Industry</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-info-par">
+                    <div class="stat-info-sub-par">
+                        <div class="stat-info-div">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, incidunt.</p>
+                        </div>
+                    </div>
+                    <div class="stat-info-sub-par">
+                        <div class="stat-info-div">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, incidunt.</p>
+                        </div>
+                    </div>
+                    <div class="stat-info-sub-par">
+                        <div class="stat-info-div">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, incidunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
+    <!-- =============Placement section ============= -->
+    <section id="expand" class="placement ">
+        <h2 class="section_title">Placements</h2>
+        <div class="expand-img-col">
+            <div class="expand-img">
+                <img src="./images/expand-home-img.png" alt="expand-img" class="img-responsive">
+                <div class="expand-img-info">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                    <h2>Etechno Solution Provide Placement in Different Fields.</h2>
+                    <p>Placement in python developer, java developer, php developer, software testing, SAP module, and
+                        support team placement.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="expand-img-info-col">
+            <div class="progress-bar-col">
+                <div class="col-sm-4">
+                    <div class="progressbar">
+                        <div class="second circle" data-percent="77">
+                            <strong>a</strong>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="progressbar">
+                        <div class="second circle" data-percent="55">
+                            <strong>b</strong>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="progressbar">
+                        <div class="second circle" data-percent="100">
+                            <strong>c</strong>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
 
 
+    <!-- Accordian section -->
+    <section id="faq-par">
+        <h2 class="section_title">Our Platform</h2>
+        <div class="container">
+            <div class="faq-que-col">
+                <h2 class="common-h2">Etechno Solution to work different platfrom and provide support or solution.</h2>
+                <p>Software support services are generally technical support or break/fix services that are delivered
+                    for specific software products. These services include revenue derived from long-term
+                    technical-support contracts or pay-as-you-go, incident-based support.</p>
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">01. Download access to:</div>
+                        <div class="accordion-content">
+                            <p>The latest versions and releases of your entitled software from Passport Advantage Online
+                                (PAO). Each release is more powerful, robust and secure than the previous— building on
+                                existing functionality while introducing and integrate new AI, security and cloud-ready
+                                capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">02. Etechno support for:</div>
+                        <div class="accordion-content">
+                            <p>The latest versions and releases of your entitled software from Passport Advantage Online
+                                (PAO). Each release is more powerful, robust and secure than the previous— building on
+                                existing functionality while introducing and integrate new AI, security and cloud-ready
+                                capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">03 Save time</div>
+                        <div class="accordion-content">
+                            <p>We provide second-line support, meaning that time-consuming issues are passed directly to
+                                us. This frees up time for your team to focus on your wider IT needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--faq-que-col-->
+            <div class="faq-bg-col">
+                <div class="faq-img-par">
+                    <img src="images/home-faq.png" alt="faq" class="img-responsive" />
+                </div>
+                <!--faq-img-par-->
+            </div>
+            <!--faq-bg-col-->
+            <div class="clear"></div>
+        </div>
+        <!--container-->
+    </section>
 
 
-    <!-- Services -->
-
-    <!-- <section class="services container" id="services">
-        <h2 class="section_title">Services</h2>
-        <p class="services-para">A satisfied customer is the best business strategy of all.</p>
-    </section> -->
 
     <!-- =============Service section ============= -->
     <section class="services section" id="services">
@@ -95,9 +252,9 @@
         <div class="services_container container grid">
 
             <div class="services_item">
-                <img src="https://etechnosolution.co.in/img/development.png" alt="">
+                <img src="https://etechnosolution.co.in/img/training.jpg" alt="">
                 <span class="services_button">
-                    <a href="#"> Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <a href="#"> Training <ion-icon name="chevron-forward-outline"></ion-icon></a>
                 </span>
             </div>
             <div class="services_item">
@@ -107,21 +264,16 @@
                 </span>
             </div>
             <div class="services_item">
-                <img src="https://etechnosolution.co.in/img/development.png" alt="">
+                <img src="  https://etechnosolution.co.in/img/placement.jpg" alt="">
                 <span class="services_button">
-                    <a href="#"> Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <a href="#"> Placement <ion-icon name="chevron-forward-outline"></ion-icon></a>
                 </span>
             </div>
             <div class="services_item">
-                <img src="https://etechnosolution.co.in/img/development.png" alt="">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
                 <span class="services_button">
-                    <a href="#"> Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
-                </span>
-            </div>
-            <div class="services_item">
-                <img src="https://etechnosolution.co.in/img/development.png" alt="">
-                <span class="services_button">
-                    <a href="#"> Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    <a href="#"> Staffing <ion-icon name="chevron-forward-outline"></ion-icon></a>
                 </span>
             </div>
 
@@ -129,13 +281,6 @@
 
         </div>
     </section>
-
-
-
-
-
-
-
 
     <!-- MIxIT UP -->
     <!-- =============Products section ============= -->
@@ -210,6 +355,134 @@
     </section>
 
 
+    <!-- =============Testimonial  section ============= -->
+    <section class="testimonial">
+        <h2 class="section_title">Testimonials</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-content">
+                        <h2>Mr.Farhan</h2>
+                        <h4>DAPs Solution Pvt Ltd - 3.4 LPA</h4>
+                        <hr>
+                        <p>I am grateful to Etechno Solution - both the faculty and the Training & Placement Department.
+                            They've made efforts ensuring maximum number of placed students. The Institute started
+                            grooming
+                            us for placements in the first few months including courses such as Professional Excellence
+                            Program and Professional Skills Enhancement. I suggest to join Etechno Solution which comes
+                            under top 10 computer training institute in noida</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
     <!-- =============Contact  section ============= -->
     <section class="contact section" id="contact">
         <h2 class="section_title">Contact</h2>
@@ -274,7 +547,7 @@
                     </div>
                     <div class="footer_links">
                         <h4>Our Services</h4>
-                        <a  href="#home"><ion-icon name="chevron-forward-outline"></ion-icon>
+                        <a href="#home"><ion-icon name="chevron-forward-outline"></ion-icon>
                             Web Design</a>
                         <a href="#about"><ion-icon name="chevron-forward-outline"></ion-icon>
                             Web Development</a>
@@ -311,12 +584,21 @@
 
     <!-- <script src="https://kit.fontawesome.com/a26b100780.js" crossorigin="anonymous"></script> -->
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Ion ICon  -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <Script src="js/extrenaljq.js"></Script>
+    <script src="js/extrenaljq.js"></script>
+
+
+
+
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
