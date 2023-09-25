@@ -29,32 +29,6 @@ function scrollHeader() {
 
 window.addEventListener("scroll", scrollHeader);
 
-//Scroll sections active links
-// const sections = document.querySelectorAll("section[id]");
-
-// function scrollActive() {
-//   const scrollY = window.pageYOffset;
-
-//   sections.forEach((section) => {
-//     const sectionHeight = section.offsetHeight;
-//     const sectionTop = section.offsetTop - 50;
-
-//     let sectionId = section.getAttribute("id");
-
-//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//       document
-//         .querySelector(".menu a[href *=" + sectionId + "]")
-//         .classList.add("active-link");
-//     } else {
-//       document
-//         .querySelector(".menu a[href *=" + sectionId + "]")
-//         .classList.remove("active-link");
-//     }
-//   });
-// }
-
-// window.addEventListener("scroll", scrollActive);
-
 //TYPE WRITING
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
@@ -237,82 +211,22 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-// $("#faq-accordion").accordion({
-//   collapsible: true,
-//   active: 0,
-//   heightStyle: "true",
-//   icons: { header: "ui-icon-plus", activeheader: "ui-icon-minus" },
-// });
-
-// //owl carouserl slider
-
-// $(".owl-carousel").owlCarousel({
-//   loop: true,
-//   margin: 10,
-
-//   dots: true,
-//   autoplay: true,
-//   autoplayTimeout: 2500,
-//   responsive: {
-//     0: {
-//       items: 1,
-//     },
-//     600: {
-//       items: 3,
-//     },
-//     1000: {
-//       items: 4,
-//     },
-//   },
-// });
-
-// /*smoth scroling*/
-
-// $(document).ready(function () {
-//   $(".menu a").click(function () {
-//     if (
-//       location.pathname.replace(/^\//, "") ==
-//         this.pathname.replace(/^\//, "") &&
-//       location.hostname == this.hostname
-//     ) {
-//       var $target = $(this.hash);
-//       $target =
-//         ($target.length && $target) || $("[name=" + this.hash.slice(1) + "]");
-//       if ($target.length) {
-//         var targetOffset = $target.offset().top;
-//         $("html,body").animate({ scrollTop: targetOffset }, 1000);
-//         return false;
-//       }
-//     }
-//   });
-// });
-
-// // fixed header
-
-// jQuery(window).scroll(function () {
-//   if (jQuery(window).scrollTop() >= 10) {
-//     jQuery("#home").addClass("fixed-header");
-//   } else {
-//     jQuery("#home").removeClass("fixed-header");
-//   }
-// });
-
 // /*scroll to top*/
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 100) {
-//       $("#arrow i").fadeIn();
-//     } else {
-//       $("#arrow i").fadeOut();
-//     }
-//   });
-//   $("#arrow i").on("click", function () {
-//     $("html,body").animate(
-//       {
-//         scrollTop: 0,
-//       },
-//       600
-//     );
-//     return false;
-//   });
-// });
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("#arrow ion-icon").fadeIn();
+    } else {
+      $("#arrow ion-icon").fadeOut();
+    }
+  });
+  $("#arrow ion-icon").on("click", function () {
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      600
+    );
+    return false;
+  });
+});
