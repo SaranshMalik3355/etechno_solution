@@ -180,12 +180,56 @@ p {
   border-radius: 50%;
 }
 
+/* .section-waves {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: pink;
+  overflow: hidden;
+}
+
+.section-waves .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./images/wave.png);
+  background-size: 1000px 100px;
+}
+
+ .wave .wave1 {
+  animation: animate 30s liner infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+ .wave.wave1 {
+  animation: animate 30s liner infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+} */
+
 /* ========== Header ========== */
 header {
+  position: relative;
   position: fixed;
   width: 100%;
   /* padding: 3px 0; */
-  z-index: 1000;
+  z-index: 10000;
 }
 
 header.active {
@@ -204,7 +248,39 @@ header .nav-bar {
   display: flex;
   align-items: center;
 }
+/* DROP DOWN */
+/* .dropdown > a {
+  display: flex; */
+/* align-items: center;
+  .icon {
+    margin-left: 0.25em;
+  }
+} */
 
+.dropdown:hover .dropdown-nav {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dropdown-nav {
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1),
+    opacity 0.3s ease-in-out;
+  transform: translateY(-4rem);
+
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  /* background: rgba(225, 255, 225, 0.9); */
+  a {
+    font-weight: 300;
+    font-size: 5rem;
+  }
+}
+/* DROP DOWN */
 .menu {
   white-space: nowrap;
   transition: 0.5s;
@@ -307,23 +383,86 @@ header .nav-bar {
     display: block;
   }
 }
+/* ========== Wave ========== */
 
-/* Header*/
-.main-page {
-  background-color: #fbf9ff;
+#waves {
+  /* margin-top: 100px; */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #e0d1ee;
+  /* overflow: hidden; */
 }
+#waves .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px;
+}
+#waves .air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+#waves .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+#waves .air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+#waves .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+/*================= Header ===============*/
+/* .main-page {
+  background-color: #fbf9ff;
+} */
 .header-bg-parent {
   display: flex;
   justify-content: space-between;
 }
 
 .header-col1 {
+  z-index: 1;
   width: 55%;
   position: relative;
   left: 10%;
 }
 .main_group {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .main-buttons {
   margin-top: 50px;
@@ -338,8 +477,21 @@ header .nav-bar {
   width: 50%;
 }
 .header-col2 img {
-  margin-top: 40px;
+  margin-top: 100px;
   width: 100%;
+  animation: MoveUpDown 5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+  }
 }
 .header-col1 h2 {
   font-size: 48px;
@@ -365,10 +517,11 @@ header .nav-bar {
 @media screen and (max-width: 1000px) {
   .header-col1 {
     width: 65%;
+    z-index: 1000;
   }
   .main_group {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
   }
 
   .header-col1 h2 {
@@ -376,7 +529,7 @@ header .nav-bar {
     line-height: 35px;
   }
   .header-col2 img {
-    margin-top: 80px;
+    margin-top: 150px;
     width: 100%;
   }
   .header-bg-parent {
@@ -402,7 +555,7 @@ header .nav-bar {
   }
   .header-col2 img {
     width: 300px;
-    margin-top: 80px;
+    /* margin-top: 150px; */
   }
   .main-buttons {
     display: flex;
