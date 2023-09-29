@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <title>SA</title> -->
+    <title>About</title>
     <!-- <meta name="description" content=""> -->
 
 
@@ -33,15 +31,64 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- <style>
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
-
+#myBtn:hover {
+  background-color: #555;
+}
+</style> -->
 </head>
 
 <body>
+
     <!-- =============Arrow============= -->
     <!-- <div id="arrow">
-            <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
-        </div> -->
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </div> -->
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script> -->
+
+
+    <!-- <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div> -->
+    </section>
 
     <!--============= Header =============-->
     <header id="header">
@@ -54,7 +101,7 @@
                     <a href="index.html" class="menu_link ">Home</a>
                 </li>
                 <li class="menu_item">
-                    <a href="about.html" class="menu_link">About</a>
+                    <a href="#about" class="menu_link active-link">About</a>
                 </li>
                 <li class="menu_item">
                     <a href="#services" class="menu_link">Services</a>
@@ -72,7 +119,7 @@
                     </ul> -->
                 </li>
                 <li class="menu_item">
-                    <a href="sap.html" class="menu_link  active-link">SAP</a>
+                    <a href="sap.html" class="menu_link">SAP</a>
                 </li>
                 <li class="menu_item">
                     <a href="#contact" class="menu_link">Contact</a>
@@ -84,104 +131,102 @@
     </header>
 
 
-
-    <section class="section-sap container">
-        <img src="https://www.parallels.com/blogs/ras/app/uploads/2018/04/shutterstock_1018157683-1.png" alt="">
-        <!-- <h2 class="section_title">Consulting and implementation</h2> -->
-        <!-- <img src=" ./images/dd-removebg-preview.png" alt=""> -->
-        <div class="sap-content ">
-            <div class="sap-content-div1">
-                <h1>Our SAP / ERP Services</h1>
-            </div>
-            <div class="sap-content-div2">
-                <p>SAP Application Management Services include development, implementation, integration, testing,
-                    maintenance and support (functional and technical), monitoring, backup, plus recovery and help desk
-                    services.
+    <section class="bg_image">
+        <div class="container">
+            <div class="about-content ">
+                <h2>About <span>Etechno</span></h2>
+                <p>We are an Enterprise Software & Services provider, focused on SAP Implementation, Support services
+                    provider in the areas of all ERP and specialized in SAP.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- cards -->
-    <section class="hero-section container">
-        <div class="sap_card-grid">
-            <a class="sap_card" href="#">
-                <div class="sap_card__background"
-                    style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
-                </div>
-                <div class="sap_card__content">
-                    <p class="sap_card__category">
-                        <ion-icon name="documents-outline"></ion-icon>
-                    </p>
-                    <h3 class="sap_card__heading">SAP / ERP SERVICES</h3>
-                    <ul>
-                        <li>Implementation</li>
-                        <li>Upgrades</li>
-                        <li>Migration</li>
-                        <li>AMS Operations</li>
-                        <li>Custom Application Development</li>
-                        <li>Consulting</li>
-                    </ul>
-                </div>
-            </a>
-            <a class="sap_card" href="#">
-                <div class="sap_card__background"
-                    style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-                </div>
-                <div class="sap_card__content">
-                    <p class="sap_card__category"><ion-icon name="cloud-outline"></ion-icon></p>
-                    <h3 class="sap_card__heading">Technology</h3>
-                    <ul>
-                        <li>SAP
-                            <ul>
-                                <li>S/4-HANA and SAP ECC</li>
-                            </ul>
-                        </li>
-                        <li>SAP CLOUD
-                            <ul>
-                                <li>SAP C4C</li>
-                                <li>Success Factors</li>
-                                <li>Ariba</li>
-                            </ul>
-                        </li>
-                        <!-- <li>Migration</li>
-                        <li>AMS Operations</li>
-                        <li>Custom Application Development</li>
-                        <li>Consulting</li> -->
-                    </ul>
-                </div>
-            </a>
-            <a class="sap_card" href="#">
-                <div class="sap_card__background"
-                    style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-                </div>
-                <div class="sap_card__content">
-                    <p class="sap_card__category"><ion-icon name="construct-outline"></ion-icon></p>
-                    <h3 class="sap_card__heading">Construction</h3>
-                    <ul>
-                        <li>Manufacturing</li>
-                        <li>Logistics and supply chain</li>
-                        <li>Banking and financial servies</li>
-                        <li>Pharma and Health care </li>
-                        <li>Aviation</li>
-                        <li>Mining and Minerals, metals</li>
-                        <li>Petrochemicals</li>
-                        <li>Real estate and construction</li>
-                        <li>Transport Management</li>
-                    </ul>
-                </div>
-
-                <a class="sap_card" href="#">
-                    <div class="sap_card__background"
-                        style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-                    </div>
-                    <div class="sap_card__content">
-                        <p class="sap_card__category">SOMETHING</p>
-                        <h3 class="sap_card__heading">SOMETHING</h3>
-                    </div>
-                </a>
-                <div>
+    <section class="mission-container ">
+        <div class="mission container">
+            <div class="mission-div1">
+                <h1>Vision</h1>
+                <p>To be an expert in each market we enter, offering unquestioned value and extraordinary service to
+                    achieve mutual success and growth for our employees, customers, and shareholders.</p>
+            </div>
+            <div class="mission-div2">
+                <h1>Mission</h1>
+                <p>To drive customer success through impactful solutions. We achieve it through unparalleled passion, a
+                    high level of expertise, and a total commitment to our people and our customers.</p>
+            </div>
+        </div>
     </section>
+
+    <section class="values container">
+        <h1>Our core values</h1>
+        <div class="valuess">
+            <div class="values-content">
+                <ion-icon name="time-outline"></ion-icon>
+                <h3>Agility</h3>
+                <p>Being alert to change and moving quickly to meet challenges arising from such change.</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h3>Customer Focus</h3>
+                <p>Ensuring customers are happy and successful so they come back for more.</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="thumbs-up-outline"></ion-icon>
+                <h3>Excellence</h3>
+                <p>Striving to be the best in all that we do, in order to create value for our customers and employees
+                </p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="diamond-outline"></ion-icon>
+                <h3>Integrity</h3>
+                <p>Treating all our customers, partners and colleagues with utmost honesty and fairness</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="people-circle-outline"></ion-icon>
+                <h3>People Focus</h3>
+                <p>Focusing on people because they bring strategic value and are critical to the company’s success.</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="globe-outline"></ion-icon>
+                <h3>Teamwork</h3>
+                <p>Working together as a team for the collective interests of our customers and company</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <h3>Accountability</h3>
+                <p>Accepting responsibility for our actions (and inactions) is the ultimate way to build trust
+                    internally and externally.</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="search-outline"></ion-icon>
+                <h3>Transparency</h3>
+                <p>Making mutual trust possible, and building reliability, credibility, and integrity</p>
+            </div>
+            <div class="values-content">
+                <ion-icon name="bulb-outline"></ion-icon>
+                <h3>Innovation</h3>
+                <p>Seeking innovative and creative approaches to big challenges as well as everyday improvements</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- =============Footer section ============= -->
 
@@ -209,7 +254,7 @@
                     <div class="footer-right-div">
                         <div class="footer_links">
                             <h4>Our Services</h4>
-                            <a href="#home"><ion-icon name="chevron-forward-outline"></ion-icon>
+                            <a href="index.html"><ion-icon name="chevron-forward-outline"></ion-icon>
                                 Web Design</a>
                             <a href="#about"><ion-icon name="chevron-forward-outline"></ion-icon>
                                 Web Development</a>
@@ -238,23 +283,22 @@
 
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
-        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-    <!-- <script src="https://kit.fontawesome.com/a26b100780.js" crossorigin="anonymous"></script> -->
 
-    <!-- Swiper JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- Ion ICon  -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
     <script src="js/jquery-ui.min.js"></script>
 
-    <!-- <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script> -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/extrenaljq.js"></script>
 
+
+
+
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
