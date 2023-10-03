@@ -315,9 +315,14 @@ a.menu_link:hover {
 #waves {
   /* margin-top: 100px; */
   position: relative;
-  width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  /* width: 100%; */
+  background-image: url(/images/background.webp);
+  background-position: "";
+  background-size: cover;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
   /* background: #e0d1ee; */
   /* overflow: hidden; */
 }
@@ -427,10 +432,14 @@ a.menu_link:hover {
 }
 
 .main-heading {
-  color: #11cae0;
+  color: var(--main-color);
 }
 
+.typewrite {
+  color: #fff;
+}
 .header-col1 p {
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -1784,22 +1793,23 @@ hr {
 
 .sap_card__heading {
   color: var(--text-lighter);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   /* text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2); */
-  line-height: 1.4rem;
+  line-height: 1.3rem;
+  margin-bottom: 2px;
   /* word-spacing: 100vw; */
 }
 
 .sap_card__content ion-icon {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
 }
 
-.sap_card__content ul {
-  font-size: 18px;
+.sap_card__content p {
+  font-size: 16px;
   color: #fff;
-  list-style: circle;
-  line-height: 30px;
+  /* list-style: circle; */
+  line-height: 20px;
 }
 @media (max-width: 960px) {
   .sap_card-grid {
@@ -1813,7 +1823,7 @@ hr {
     font-size: 30px;
     /* color: #fff; */
   }
-  .sap_card__content ul {
+  .sap_card__content p {
     font-size: 15px;
     line-height: 20px;
   }
@@ -1829,7 +1839,7 @@ hr {
     font-size: 40px;
     /* color: #fff; */
   }
-  .sap_card__content ul {
+  .sap_card__content p {
     font-size: 16px;
     line-height: 30px;
   }
@@ -1939,7 +1949,7 @@ hr {
 .role-div2 h1 {
   font-weight: 800;
   font-size: 35px;
-  color: var(--subtitle-color);
+  color: #3b3663;
   padding: 10px 0;
 }
 .role-div1 p,
@@ -2014,9 +2024,11 @@ hr {
 
 .mission-div1 p {
   color: #fff;
+  height: 50%;
 }
 .mission-div2 p {
   color: var(--main-color);
+  height: 50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -2050,4 +2062,182 @@ hr {
   .values h1 {
     font-size: 40px;
   }
+}
+/* SAp IMPLEMENT */
+
+.sap_imp_bg_image {
+  padding-top: 200px;
+  width: 100%;
+  height: 500px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 106, 140, 0.8),
+      rgba(192, 164, 228, 0.616),
+      rgba(192, 160, 236, 0.384),
+      rgba(159, 159, 159, 0.4)
+    ),
+    url("https://www.parallels.com/blogs/ras/app/uploads/2018/04/shutterstock_1018157683-1.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.sap-imp-content h2 {
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+/* .sap-imp-content p {
+  padding-top: 20px;
+  display: flex;
+  justify-content: start;
+  width: 80%;
+  font-size: 20px;
+} */
+section.sap-implementation-section.container {
+  margin-top: 20px;
+}
+
+.sap-implementation-section h2 {
+  color: #3b3663;
+  font-size: 38px;
+  line-height: 44px;
+  margin-bottom: 7px;
+}
+.sap-implementation-section p {
+  font-size: 16px;
+  color: var(--subtitle-color);
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+.sap-main {
+  display: flex;
+}
+
+.sap-implement {
+  width: 60%;
+}
+.sap-implement-img {
+  width: 40%;
+}
+.sap-implement h2 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-bottom: 7px;
+}
+.sap-implement p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--subtitle-color);
+  padding-bottom: 20px;
+}
+.sap-implement-img img {
+  width: 100%;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.activate-img {
+  margin: 20px 0;
+}
+
+/* Sap audit */
+
+.sap_audit_bg_image {
+  padding-top: 200px;
+  width: 100%;
+  height: 500px;
+
+  background-image: url("./images/audit.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.sap-audit-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  color: #fff;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  width: 75%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.sap-audit-content h2 {
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: lightblue; */
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+/* benefits */
+.benefits {
+  margin-top: 20px;
+  display: flex;
+}
+.benefits_img {
+  width: 30%;
+}
+.benefits_content {
+  width: 70%;
+}
+.benefits_img img {
+  width: 75%;
+}
+.benefits_content h2 {
+  color: #3b3663;
+  font-size: 38px;
+}
+.benefits_content p {
+  color: var(--subtitle-color);
+  padding: 20px;
+  font-size: 16px;
+}
+/* METHODOLOGY */
+.methodology_section h2 {
+  font-size: 38px;
+  margin: 20px 0;
+}
+.methodology_section img {
+  width: 80%;
+  margin: 20px 0;
+}
+
+/* Migration */
+.sap_migration_bg_image {
+  padding-top: 200px;
+  width: 100%;
+  height: 500px;
+
+  background-image: url("./images/migration-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.sap-migration-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  color: #fff;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  width: 75%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.sap-migration-content h2 {
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: lightblue; */
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
