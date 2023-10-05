@@ -1,4 +1,5 @@
 // Selecting html elements
+// alert("hello there");
 
 const iconToggle = document.querySelector(".toggle_icon");
 const navbarMenu = document.querySelector(".menu");
@@ -106,14 +107,14 @@ filterItems.forEach((el) => {
 
 //MIXIT UP
 
-let mixerproducts = mixitup(".products_wrap-container", {
-  selectors: {
-    target: ".products_item",
-  },
-  animation: {
-    duration: 300,
-  },
-});
+// let mixerproducts = mixitup(".products_wrap-container", {
+//   selectors: {
+//     target: ".products_item",
+//   },
+//   animation: {
+//     duration: 300,
+//   },
+// });
 
 // //counter
 
@@ -140,76 +141,76 @@ let mixerproducts = mixitup(".products_wrap-container", {
 
 // //progress bar js
 
-$(document).ready(function ($) {
-  function animateElements() {
-    $(".progressbar").each(function () {
-      var elementPos = $(this).offset().top;
-      var topOfWindow = $(window).scrollTop();
-      var percent = $(this).find(".circle").attr("data-percent");
-      var animate = $(this).data("animate");
-      if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-        $(this).data("animate", true);
-        $(this)
-          .find(".circle")
-          .circleProgress({
-            // startAngle: -Math.PI / 2,
-            value: percent / 100,
-            size: 400,
-            thickness: 15,
-            fill: {
-              color: "#f47a14",
-            },
-          })
-          .on(
-            "circle-animation-progress",
-            function (event, progress, stepValue) {
-              $(this)
-                .find("strong")
-                .text((stepValue * 100).toFixed(0) + "%");
-            }
-          )
-          .stop();
-      }
-    });
-  }
+// $(document).ready(function ($) {
+//   function animateElements() {
+//     $(".progressbar").each(function () {
+//       var elementPos = $(this).offset().top;
+//       var topOfWindow = $(window).scrollTop();
+//       var percent = $(this).find(".circle").attr("data-percent");
+//       var animate = $(this).data("animate");
+//       if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+//         $(this).data("animate", true);
+//         $(this)
+//           .find(".circle")
+//           .circleProgress({
+//             // startAngle: -Math.PI / 2,
+//             value: percent / 100,
+//             size: 400,
+//             thickness: 15,
+//             fill: {
+//               color: "#f47a14",
+//             },
+//           })
+//           .on(
+//             "circle-animation-progress",
+//             function (event, progress, stepValue) {
+//               $(this)
+//                 .find("strong")
+//                 .text((stepValue * 100).toFixed(0) + "%");
+//             }
+//           )
+//           .stop();
+//       }
+//     });
+//   }
 
-  animateElements();
-  $(window).scroll(animateElements);
-});
+//   animateElements();
+//   $(window).scroll(animateElements);
+// });
 
 // //accordion
-const accordionHeaders = document.querySelectorAll(".accordion-header");
-accordionHeaders.forEach((header) => {
-  header.addEventListener("click", function () {
-    const content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-});
+// const accordionHeaders = document.querySelectorAll(".accordion-header");
+// accordionHeaders.forEach((header) => {
+//   header.addEventListener("click", function () {
+//     const content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// });
 
 // swiper
-var swiper = new Swiper(".swiper", {
-  loop: true,
-  freeMode: true,
+// var swiper = new Swiper(".swiper", {
+//   loop: true,
+//   freeMode: true,
 
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   coverflowEffect: {
+//     rotate: 50,
+//     stretch: 0,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: true,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+// });
 
 // /*scroll to top*/
 $(document).ready(function () {
@@ -231,25 +232,51 @@ $(document).ready(function () {
   });
 });
 
-// scroll to top button
-// Get the button
-let mybutton = document.getElementById("myBtn");
+// // scroll to top button
+// // Get the button
+// let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+
+// migration accordian
+const migaccordionButtons = document.querySelectorAll(".mig-accordion-button");
+migaccordionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const migaccordion = button.parentElement;
+    migaccordion.classList.toggle("open");
+    const icon = button.querySelector(".mig-accordion-icon");
+    if (migaccordion.classList.contains("open")) {
+      icon.innerHTML = "&#9650;"; // Change to "▲" when open
+    } else {
+      icon.innerHTML = "&#9660;"; // Change to "▼" when closed
+    }
+    const migcontent = migaccordion.querySelector(".mig-accordion-content");
+    if (migaccordion.classList.contains("open")) {
+      migcontent.style.display = "block";
+    } else {
+      migcontent.style.display = "none";
+    }
+  });
+});
+
+//online table js
+// $(function(){
+//   $('#keywords').tablesorter();
+// });
