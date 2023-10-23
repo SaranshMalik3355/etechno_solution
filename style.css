@@ -1692,6 +1692,7 @@ hr {
 
 .certificate-cards-content ion-icon {
   font-size: 50px;
+  margin-bottom: 10px;
   color: var(--main-color);
 }
 
@@ -2557,22 +2558,23 @@ section.sap-ams-section.container {
 }
 
 /*====================COURSES=============== */
+
 .courses_bg_image {
   padding-top: 200px;
   width: 100%;
   height: 500px;
-
   background: linear-gradient(
       90deg,
       rgb(110, 100, 105) 7%,
       rgba(4, 10, 26, 0.323) 100%
     ),
-    url("https://kloverharris.com/wp-content/uploads/2022/04/training-image.jpg");
+    url("./images/training.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
 }
-.courses-content {
+.courses-content,
+.software-content {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 40px;
   color: #fff;
@@ -2583,7 +2585,8 @@ section.sap-ams-section.container {
   text-align: left;
 }
 
-.courses-content h2 {
+.courses-content h2,
+.software-content h2 {
   /* display: flex;
   flex-direction: column; */
   /* background-color: lightblue; */
@@ -2892,6 +2895,22 @@ div#online-wrapper {
 }
 #keywords tbody tr td.lalign {
   text-align: left;
+}
+
+/*====================SOFTWARE TRAINING=============== */
+.software_bg_image {
+  padding-top: 200px;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(
+      90deg,
+      rgb(110, 100, 105) 7%,
+      rgba(4, 10, 26, 0.323) 100%
+    ),
+    url("./images/softwareTraininf.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 /*====================APP DEVELOPMENT=============== */
