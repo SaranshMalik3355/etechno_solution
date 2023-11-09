@@ -22,63 +22,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        .dropbtn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
 
-        /* .dropdown:hover .dropbtn {
-            background-color: red;
-        } */
-
-        li.dropdown {
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
-
-    <!-- =============Arrow============= -->
-    <!-- <div id="arrow">
-        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
-    </div> -->
-
-
-
-    <!-- <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-        <div class="wave wave4"></div> -->
-    </section>
 
     <!--============= Header =============-->
     <header id="header">
@@ -99,16 +46,96 @@
                 <li class="menu_item">
                     <a href="products.html" class="menu_link">Products</a>
                 </li>
+                <li class="menu_item dropdown">
+                    <a href="#" class="menu_link">Courses</a>
+                    <div class="dropdown-content">
+                        <div class="sub-dropdown">
+                            <a href="sapMainCourses.html">Sap Courses</a>
+                            <!-- <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div> -->
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Programming Language <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="CandC++.html">C & C++ Certification</a>
+                                <a href="python.html">Python Certification</a>
+                                <a href="php.html">PHP Certification</a>
+                                <a href="java.html">Java Certification</a>
+                                <a href="angular.html">Angular Certification</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Web Designing Certificate <ion-icon
+                                    name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="Html-css.html">HTML/CSS Certificate</a>
+                                <a href="jQuery.html">Javascript/Jquery Certificate</a>
+                                <a href="bootstrap.html">Bootstrap Certificate</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Web Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="php.html">Core PHP</a>
+                                <a href="php.html">Advanced Php</a>
+                                <a href="angular.html">Angular JS</a>
+                                <a href="wordPress.html">WordPress</a>
+                                <a href="">Drupal</a>
+                            </div>
+                        </div>
+                        <!-- <div class="sub-dropdown">
+                            <a href="#">Nested Dropdown 1</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Nested Dropdown 1</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </li>
                 <!-- <li class="menu_item dropdown">
                     <a href="" class="menu_link dropbtn">COURSES</a>
                     <div class="dropdown-content">
-                        <a href="#">SAP Functional Modules</a>
+                        <a href="#">Nested Dropdown</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            <li><a href="#">Sub Item 3</a></li>
+                        </ul>
+                        Inside Dropdown
+                            <div class="dropdown-two">
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                            </div>
                         <a href="#">SAP Technical Modules</a>
                         <a href="#">SAP Advance Modules</a>
-                        <a href="#">Programming language</a>
-                        <a href="#">Web Designing Certification</a>
+                        <a id="link1" class="dItem" href="#">Programming language
+                            Inside Dropdown
+                            <div class="dropdown-two">
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                            </div>
+                        </a>
+                        <a href=" #">Web Designing Certification</a>
                         <a href="#">Web Development</a>
-                      
+
                     </div>
                 </li> -->
                 <li class="menu_item">
@@ -118,7 +145,7 @@
                     <a href="sap.html" class="menu_link">SAP</a>
                 </li>
                 <li class="menu_item">
-                    <a href="#contact" class="menu_link">Contact</a>
+                    <a href="contact.html" class="menu_link">Contact</a>
                 </li>
                 <ion-icon name="close-outline" class="close_icon"></ion-icon>
             </ul>
@@ -281,27 +308,27 @@
         <div class="property-cards container">
             <div class="property-cards-content">
                 <ion-icon name="bag-remove-outline"></ion-icon>
-                <p>100% Job Guarantee</p>
+                <p>100% Placement Assistance</p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="location-outline"></ion-icon>
-                <p>100+ Centers across Pan India</p>
+                <p> 90 Days Server Access </p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="person-circle-outline"></ion-icon>
-                <p>70000+ Registered Employers</p>
+                <p>100+ Registered Trainers</p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="school-outline"></ion-icon>
-                <p>No.1+ Accounts & Finance Institute</p>
+                <p>No.1+ Training Institute All Over India</p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="search-outline"></ion-icon>
-                <p>Interactive Classes</p>
+                <p>Interactive Online Classes</p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="easel-outline"></ion-icon>
-                <p>Practical Training</p>
+                <p>Practical Training </p>
             </div>
             <div class="property-cards-content">
                 <ion-icon name="trophy-outline"></ion-icon>
@@ -309,7 +336,7 @@
             </div>
             <div class="property-cards-content">
                 <ion-icon name="desktop-outline"></ion-icon>
-                <p>Up-to-date</p>
+                <p>Up-to-date Course Training</p>
             </div>
         </div>
 
@@ -652,12 +679,12 @@
         </div>
         <div class="certificate-row">
             <div class="certificate-img">
-                <img class="img-fluid" src="https://etechnosolution.co.in/img/SAP.png" alt="">
+                <img class="img-fluid" src="./images/etechno-Certificate_page-0001.jpg" alt="">
             </div>
             <div class="certificate-cards">
                 <div class="certificate-cards-content">
                     <ion-icon name="book-outline"></ion-icon>
-                    <p>4,60,000+ Trained ETECHNO SOLUTION® Alumni Worldwide</p>
+                    <p>4,600+ Trained ETECHNO SOLUTION® Alumni Worldwide</p>
                 </div>
                 <div class="certificate-cards-content">
                     <ion-icon name="desktop-outline"></ion-icon>
@@ -669,11 +696,11 @@
                 </div>
                 <div class="certificate-cards-content">
                     <ion-icon name="star-outline"></ion-icon>
-                    <p>3452+ Reviews with 4.8/5 Ratings</p>
+                    <p>110+ Reviews with 4.8/5 Ratings</p>
                 </div>
                 <div class="certificate-cards-content">
                     <ion-icon name="diamond-outline"></ion-icon>
-                    <p>210+ Corporate Recruiting Partners With Multiple MNC Tie-Ups</p>
+                    <p>9000+ Corporate Recruiting Partners With Multiple MNC Tie-Ups</p>
                 </div>
                 <div class="certificate-cards-content">
                     <ion-icon name="medal-outline"></ion-icon>
