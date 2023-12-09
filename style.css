@@ -170,7 +170,7 @@ h6 {
 p {
   font-family: "Rubik";
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 /* ========== Arrow ========== */
@@ -637,12 +637,26 @@ a.menu_link:hover {
   display: flex;
   width: 50%;
 }
-.stat {
+.count-sub-col {
+  display: flex;
+  align-items: center;
+}
+/* .stat {
+  width: 30%;
+} */
+.milestone-counter {
   width: 30%;
 }
-
-.stat-info-par {
+.stat-info-sub-par {
   width: 70%;
+}
+/* .stat-info-par {
+  width: 70%;
+} */
+.stat-info-sub-par {
+  /* margin-left: 90px; */
+  /* margin: 15px 0px 40px; */
+  margin: 30px 0;
 }
 /* copy */
 
@@ -659,7 +673,7 @@ a.menu_link:hover {
 
 .highlight:after {
   content: "+";
-  color: var(--second-color);
+  color: var(--main-color);
   position: absolute;
   top: 10px;
   font-size: 30px;
@@ -669,16 +683,18 @@ a.menu_link:hover {
   color: #3b3663;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Rubik";
-  padding: 20px 0px;
+  /* font-family: "Rubik"; */
+  /* padding: 20px 0px; */
 }
 
-.stat-info-sub-par {
+/* .stat-info-sub-par {
   margin: 15px 0px 40px;
-}
+} */
 
 .stat-info-div {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .stat-info-div:before {
