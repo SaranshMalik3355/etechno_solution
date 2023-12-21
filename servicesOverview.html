@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Services overview</title>
+    <!-- <meta name="description" content=""> -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Prompt:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 80%;
+            /* height: 50px; */
+            border-collapse: collapse;
+            /* margin: 20px; */
+            /* Optional: Add some margin for better visualization */
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--============= Header =============-->
+    <header id="header">
+        <div class="nav-bar  container">
+            <a href="" class="logo">
+                <img class="l" src="./images/dd-removebg-preview.png" alt="" />
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="index.html" class="menu_link ">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="about.html" class="menu_link">About</a>
+                </li>
+                <!-- <li class="menu_item">
+                    <a href="#services" class="menu_link">Services</a>
+                </li> -->
+                <li class="menu_item dropdown">
+                    <a href="#" class="menu_link active-link">Services </a>
+                    <div class="dropdown-content">
+                        <div class="sub-dropdown">
+                            <a href="servicesOverview.html">Services Overview <ion-icon
+                                    name="chevron-forward-outline"></ion-icon></a>
+
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="training.html">Training <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <!-- <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div> -->
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="sap.html">Sap</a>
+                                <a href="appDevelopment.html">Mobile / Web App Development</a>
+                                <!-- <a href="php.html">PHP Certification</a>
+                                <a href="java.html">Java Certification</a>
+                                <a href="angular.html">Angular Certification</a> -->
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="staff.html">IT & Staffing <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <!-- <div class="sub-dropdown-content">
+                                <a href="Html-css.html">HTML/CSS Certificate</a>
+                                <a href="jQuery.html">Javascript/Jquery Certificate</a>
+                                <a href="bootstrap.html">Bootstrap Certificate</a>
+                            </div> -->
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">SAP SUPPORT <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <!-- <div class="sub-dropdown-content">
+                                <a href="php.html">Core PHP</a>
+                                <a href="php.html">Advanced Php</a>
+                                <a href="angular.html">Angular JS</a>
+                                <a href="wordPress.html">WordPress</a>
+                                <a href="">Drupal</a>
+                            </div> -->
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="menu_item">
+                    <a href="products.html" class="menu_link">Products</a>
+                </li>
+                <li class="menu_item dropdown">
+                    <a href="#" class="menu_link">Courses</a>
+                    <div class="dropdown-content">
+                        <div class="sub-dropdown">
+                            <a href="sapMainCourses.html">Sap Courses</a>
+                            <!-- <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div> -->
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Programming Language <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="CandC++.html">C & C++ Certification</a>
+                                <a href="python.html">Python Certification</a>
+                                <a href="php.html">PHP Certification</a>
+                                <a href="java.html">Java Certification</a>
+                                <a href="angular.html">Angular Certification</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Web Designing Certificate <ion-icon
+                                    name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="Html-css.html">HTML/CSS Certificate</a>
+                                <a href="jQuery.html">Javascript/Jquery Certificate</a>
+                                <a href="bootstrap.html">Bootstrap Certificate</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Web Development <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="php.html">Core PHP</a>
+                                <a href="php.html">Advanced Php</a>
+                                <a href="angular.html">Angular JS</a>
+                                <a href="wordPress.html">WordPress</a>
+                                <a href="">Drupal</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Artificial Intelligence<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <div class="sub-dropdown-content">
+                                <a href="machineLearning.html">Machine Learning</a>
+                                <a href="robotics.html">Robotics</a>
+                                <a href="dataScience.html">Data Science</a>
+                                <a href="dataAnalytics.html">Data Analytics</a>
+
+                            </div>
+                        </div>
+                        <!-- <div class="sub-dropdown">
+                            <a href="#">Nested Dropdown 1</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div>
+                        </div>
+                        <div class="sub-dropdown">
+                            <a href="#">Nested Dropdown 1</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Sub Item 1</a>
+                                <a href="#">Sub Item 2</a>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </li>
+                <!-- <li class="menu_item dropdown">
+                    <a href="" class="menu_link dropbtn">COURSES</a>
+                    <div class="dropdown-content">
+                        <a href="#">Nested Dropdown</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            <li><a href="#">Sub Item 3</a></li>
+                        </ul>
+                        Inside Dropdown
+                            <div class="dropdown-two">
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                            </div>
+                        <a href="#">SAP Technical Modules</a>
+                        <a href="#">SAP Advance Modules</a>
+                        <a id="link1" class="dItem" href="#">Programming language
+                            Inside Dropdown
+                            <div class="dropdown-two">
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                                <div class="dItem" id="file" href="#">Import</div>
+                            </div>
+                        </a>
+                        <a href=" #">Web Designing Certification</a>
+                        <a href="#">Web Development</a>
+
+                    </div>
+                </li> -->
+                <li class="menu_item">
+                    <a href="training.html" class="menu_link">Training</a>
+                </li>
+                <li class="menu_item">
+                    <a href="sap.html" class="menu_link">SAP</a>
+                </li>
+                <li class="menu_item">
+                    <a href="contact.html" class="menu_link">Contact</a>
+                </li>
+                <ion-icon name="close-outline" class="close_icon"></ion-icon>
+            </ul>
+            <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+        </div>
+    </header>
+
+
+    <section class="software_bg_image">
+        <div class="container">
+            <div class="software-content ">
+                <h2>Services Overview</h2>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="role-section " style="height: 40vw;  background-color: #fdf9f5d1;">
+        <div class="container role " style="margin:0  auto!important; height: 100%; ">
+            <div class=" role-div1">
+                <h1 style="font-size: 50px;">ETECHNO SERVICES</h1>
+                <div>
+                    <p>We create diverse, complex, web and mobile solutions for any business need. With us you get
+                        quality software and perfect service every time. Architected for security, efficiency and
+                        optimal user experience, our digital products benefit clients in enterprise and government
+                        alongside charities, not-for-profits and start-ups.
+                    </p>
+                    <div class="services-stats"
+                        style="margin-top: 10px; display: flex; justify-content: space-between;">
+                        <div>
+                            <h1>2,480</h1>
+                            <p>Remote Sales Experts</p>
+                        </div>
+                        <div>
+                            <h1>760</h1>
+                            <p>New Clients per Month</p>
+                        </div>
+                        <div>
+                            <h1>1,200</h1>
+                            <p>Requests per Week</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="role-div2">
+                <!-- <img src="./images/RECRUITMMENT.jpg" class="img-responsive" alt=""> -->
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VydmljZXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="img-responsive" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="role-section container">
+        <div class=" role  ">
+            <div class="role-div2" style="justify-content: start;">
+                <!-- <img src="./images/RECRUITMMENT.jpg" class="img-responsive" alt=""> -->
+                <img src="https://plus.unsplash.com/premium_photo-1661963874418-df1110ee39c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGl0JTIwYW5kJTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D"
+                    class="img-responsive" alt="">
+
+            </div>
+            <div class=" role-div1">
+                <h1>IT & Software Development</h1>
+                <div>
+                    <p>SkillDukan is a software development agency with the in-house expertise to meet a diverse range
+                        of requirements, from standard CMS, for straight forward sites, to custom development of complex
+                        web portals and database applications
+                    </p>
+                    <div>
+                        <table>
+
+                            <tr>
+
+
+                                <td>
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    <h4> Digital transformation</h4>
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+
+                                <td>
+                                    Analytics services
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Audit services
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                                <td>
+                                    Cybersecurity & strategy
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="about_btn">
+                    <a href="#" class=" btn">Learn more</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="role-section container">
+        <div class=" role  " style="height: 80vh;">
+            <div class=" role-div1">
+                <h1>Mobile App Development</h1>
+                <div>
+                    <p>We'll help your business retain a competitive edge online with the development of a mobile
+                        app. With smartphone traffic on the increase we can help you embrace this platform in the
+                        representation of your brand.
+                    </p>
+                    <div>
+                        <p><ion-icon style="color: var(--main-color); font-size: 20px;"
+                                name="checkmark-done-outline"></ion-icon>Sagittis
+                            quam egestas sit sit convallis
+                            turpis sit augue interdum morbi. </p>
+                        <p><ion-icon style="color: var(--main-color); font-size: 20px;"
+                                name="checkmark-done-outline"></ion-icon>Sollicitudin cursus habitasse adipiscing
+                            est sed aenean sapien.</p>
+                        <p><ion-icon style="color: var(--main-color); font-size: 20px;"
+                                name="checkmark-done-outline"></ion-icon> At arcu arcu morbi scelerisque nibh. Quam
+                            velit fermentum porta facilisi massa. </p>
+                    </div>
+                    <div>
+                        <table>
+
+                            <tr>
+
+
+                                <td>
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    <h4>Secured</h4>
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+
+                                <td>
+                                    eWallet
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Payment Gateway
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+
+                                <td></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <div class="about_btn">
+                    <a href="#" class=" btn">Learn more</a>
+                </div>
+            </div>
+
+            <div class="role-div2">
+                <!-- <img src="./images/RECRUITMMENT.jpg" class="img-responsive" alt=""> -->
+                <img src="https://images.unsplash.com/photo-1609921141835-710b7fa6e438?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fE1vYmlsZSUyMEFwcCUyMERldmVsb3BtZW50fGVufDB8fDB8fHww"
+                    class="img-responsive" alt="">
+
+            </div>
+        </div>
+
+    </section>
+    <section class="role-section container">
+        <div class=" role  " style="height: 80vh;">
+            <div class="role-div2" style="justify-content: start;">
+                <!-- <img src="./images/RECRUITMMENT.jpg" class="img-responsive" alt=""> -->
+                <img src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+                    class="img-responsive" alt="">
+
+            </div>
+            <div class=" role-div1">
+                <h1>Design & Architecture</h1>
+                <div>
+                    <p>Our designers will work with you to produce high-quality designs that are based on your unique
+                        requirements. Giving you the ability to speak to your target audience through empowering visual
+                        designs.
+                    </p>
+
+                    <div>
+                        <table>
+
+                            <tr>
+
+
+                                <td>
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    <h4>Brochure</h4>
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+
+                                <td>
+                                    Logo
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Visiting Cards
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="about_btn">
+                    <a href="#" class=" btn">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="role-section container">
+        <div class=" role  " style="height: 80vh;">
+
+            <div class=" role-div1">
+                <h1>Data Entry & Admin</h1>
+                <div>
+                    <p>Our Data Entry and Admin Support executive can help you with day to day admin job, getting online
+                        leads for your business, collect database with address and communication details, uploading data
+                        to your website, converting different format of microsoft excel, prepare a great microsoft
+                        presentation for you and many more.. Please let us know your need and we have an expert for you.
+                    </p>
+
+                    <div>
+                        <table>
+
+                            <tr>
+
+
+                                <td>
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    <h4>Asset management</h4>
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+
+                                <td>
+                                    Operations & technology
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Corporate finance
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                                <td>
+                                    Audit services
+                                    <p>Aliquam quis odio senectus.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="about_btn">
+                    <a href="#" class=" btn">Learn more</a>
+                </div>
+            </div>
+            <div class="role-div2">
+                <!-- <img src="./images/RECRUITMMENT.jpg" class="img-responsive" alt=""> -->
+                <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGF0YSUyMGVudHJ5fGVufDB8fDB8fHww"
+                    class="img-responsive" alt="">
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- =============Footer section ============= -->
+
+    <footer>
+        <div class="footer_bg">
+            <div class="footer_container container">
+                <div class="main_footer">
+                    <div class="footer-left-div">
+                        <div class="footer_contact">
+                            <h3>Etechno Solution</h3>
+                            <p><span>Phone:</span> +91 8882919387</p>
+                            <p><span>Email:</span> info@etechnosolution.co.in</p>
+                        </div>
+                        <div class="footer_links">
+                            <h4>Usefull links</h4>
+                            <a href="#home"> <ion-icon name="chevron-forward-outline"></ion-icon>Home</a>
+                            <a href="#about"><ion-icon name="chevron-forward-outline"></ion-icon>About</a>
+                            <a href="#services"><ion-icon name="chevron-forward-outline"></ion-icon>Services</a>
+                            <a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Terms of services</a>
+                            <a href="#"><ion-icon name="chevron-forward-outline"></ion-icon>Privacy policy</a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-right-div">
+                        <div class="footer_links">
+                            <h4>Our Services</h4>
+                            <a href="index.html"><ion-icon name="chevron-forward-outline"></ion-icon>
+                                Web Design</a>
+                            <a href="#about"><ion-icon name="chevron-forward-outline"></ion-icon>
+                                Web Development</a>
+                            <a href="#services"><ion-icon name="chevron-forward-outline"></ion-icon>
+                                Product Management</a>
+                            <a href="#products"><ion-icon name="chevron-forward-outline"></ion-icon>
+                                Marketing</a>
+                            <a href="#courses"><ion-icon name="chevron-forward-outline"></ion-icon>
+                                Graphic Design</a>
+                        </div>
+                        <div class="footer_social">
+                            <h4>Our Social Networks</h4>
+                            <p>Etechno Solution Connect with Social Networks</p>
+                            <div>
+                                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_copy">&#169 Etechno Solution. All right reserved </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Ion ICon  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
